@@ -1,0 +1,36 @@
+:root {
+  --font-login: 'Inter', sans-serif;
+  --font-heading: 'Cairo', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+  --font-fallback: Arial, sans-serif;
+
+  --color-login-page: rgb(249, 249, 249);
+  --color-products-page: rgb(246, 246, 246);
+  --color-surface: rgb(255, 255, 255);
+  --color-surface-muted: rgb(243, 243, 243);
+  --color-border: rgb(237, 237, 237);
+  --color-border-strong: rgb(226, 226, 226);
+  --color-text-primary: rgb(35, 35, 35);
+  --color-text-heading: rgb(32, 32, 32);
+  --color-text-secondary: rgb(178, 179, 185);
+  --color-text-tertiary: rgb(156, 156, 156);
+  --color-blue: rgb(36, 46, 219);
+  --color-blue-muted: rgb(60, 83, 142);
+  --color-danger: #f11010;
+  --color-table-disabled: rgba(255, 255, 255, 0.5);
+
+  --shadow-card: 0 24px 32px rgba(0, 0, 0, 0.04);
+  --shadow-soft: 0 12px 8px rgba(0, 0, 0, 0.03);
+  --shadow-button: 0 8px 8px rgba(54, 122, 255, 0.03);
+
+  --radius-card: 40px;
+  --radius-card-inner: 34px;
+  --radius-control: 12px;
+  --radius-toolbar: 10px;
+  --radius-table: 12px;
+  --radius-action: 8px;
+
+  --page-max-width: 1920px;
+  --products-padding: 30px;
+}

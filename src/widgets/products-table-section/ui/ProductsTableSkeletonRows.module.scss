@@ -1,0 +1,71 @@
+.skeletonRow {
+  pointer-events: none;
+}
+
+.productCell {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.productMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.actionCell {
+  padding: 0 !important;
+  text-align: center;
+}
+
+.skeletonBlock {
+  display: inline-flex;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgb(241, 241, 241) 0%, rgb(232, 232, 232) 50%, rgb(241, 241, 241) 100%);
+}
+
+.skeletonCheckbox {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+}
+
+.skeletonThumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.skeletonTitle {
+  width: 184px;
+  height: 16px;
+}
+
+.skeletonCategory {
+  width: 96px;
+  height: 12px;
+}
+
+.skeletonVendor,
+.skeletonSku,
+.skeletonRating,
+.skeletonPrice {
+  display: block;
+  width: 96px;
+  height: 16px;
+  margin-inline: auto;
+}
+
+.skeletonPlus {
+  width: 52px;
+  height: 27px;
+  border-radius: 13.5px;
+}
+
+.skeletonMenu {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}

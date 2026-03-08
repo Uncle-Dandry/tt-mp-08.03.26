@@ -1,0 +1,39 @@
+.modalContent {
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+
+.modalTitle {
+  margin: 0;
+  color: var(--color-text-heading);
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modalActions {
+  margin-top: 8px;
+}
+
+.modalCancelButton {
+  height: 42px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+
+.modalSubmitButton {
+  height: 42px;
+  padding: 0 18px;
+  border-radius: 6px;
+  background: var(--color-blue);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}

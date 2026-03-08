@@ -1,0 +1,174 @@
+.selectedRow {
+  box-shadow: inset 3px 0 0 var(--color-blue-muted);
+}
+
+.productCell {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.checkbox {
+  position: relative;
+  display: grid;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid rgb(178, 179, 185);
+  border-radius: 4px;
+  background: var(--color-surface);
+  cursor: pointer;
+  transition: border-color 0.18s ease, background-color 0.18s ease;
+}
+
+.checkbox::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  content: '';
+  transform: scale(0.7);
+  transition: transform 0.18s ease, background-color 0.18s ease;
+}
+
+.checkbox:hover,
+.rowAction:hover {
+  border: 1px solid rgb(178, 179, 185);
+  background: rgba(36, 46, 219, 0.08);
+}
+
+.checkboxSelected {
+  border-color: rgb(178, 179, 185);
+  background: var(--color-surface);
+}
+
+.checkboxSelected::after {
+  background: var(--color-blue-muted);
+  transform: scale(1);
+}
+
+.thumb,
+.thumbPlaceholder {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgb(236, 236, 235);
+  border-radius: 8px;
+}
+
+.thumb {
+  object-fit: cover;
+}
+
+.thumbPlaceholder {
+  display: grid;
+  place-items: center;
+  background: rgb(196, 196, 196);
+  color: var(--color-surface);
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.productMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.productTitle {
+  color: rgb(22, 25, 25);
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productCategory {
+  color: var(--color-text-secondary);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.vendorCell,
+.skuCell,
+.ratingCell {
+  color: rgb(0, 0, 0);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+
+.vendorCell {
+  font-weight: 700;
+}
+
+.priceCell {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+}
+
+.priceFraction {
+  color: rgb(178, 179, 185);
+}
+
+.ratingLow {
+  color: var(--color-danger);
+}
+
+.actionCell {
+  padding: 0 !important;
+  text-align: center;
+}
+
+.actionCell > * {
+  margin-inline: auto;
+}
+
+.rowAction {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  padding: 3px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.rowPlusAction {
+  display: grid;
+  width: 52px;
+  height: 27px;
+  place-items: center;
+  border: none;
+  border-radius: 13.5px;
+  background: var(--color-blue);
+  box-shadow: var(--shadow-button);
+  cursor: pointer;
+}
+
+.rowPlusIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.rowActionIcon {
+  width: 26px;
+  height: 26px;
+  color: rgb(81, 81, 97);
+}
+
+.rowAction:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}

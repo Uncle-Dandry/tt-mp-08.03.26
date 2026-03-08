@@ -1,0 +1,32 @@
+.tableCard {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px;
+  border-radius: var(--radius-table);
+  background: var(--color-surface);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.03);
+}
+
+.paginationProgressRow {
+  width: 100%;
+  padding-top: 26px;
+}
+
+.errorState {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 18px 20px;
+  border: 1px solid rgba(241, 16, 16, 0.2);
+  border-radius: 16px;
+  color: var(--color-danger);
+  background: rgba(241, 16, 16, 0.04);
+}
+
+@media (max-width: 768px) {
+  .tableCard {
+    margin: 0 16px;
+    padding: 20px;
+  }
+}

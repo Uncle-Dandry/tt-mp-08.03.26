@@ -1,0 +1,92 @@
+.paginationRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.paginationInfo {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font: 400 16px/1 var(--font-fallback);
+}
+
+.paginationInfoValue {
+  color: rgb(35, 35, 35);
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.paginationEllipsis {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(178, 179, 185);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  line-height: 1;
+}
+
+.paginationArrow,
+.paginationNumber {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 1px solid rgb(236, 236, 235);
+  border-radius: 4px;
+  background: var(--color-surface);
+  color: rgb(178, 179, 185);
+  cursor: pointer;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  transition: border-color 0.18s ease, background-color 0.18s ease, color 0.18s ease;
+}
+
+.paginationArrow:hover,
+.paginationNumber:hover {
+  border-color: rgba(36, 46, 219, 0.22);
+  color: rgb(81, 81, 97);
+  background: rgba(36, 46, 219, 0.08);
+}
+
+.paginationArrow:hover .arrowIcon {
+  color: rgb(81, 81, 97);
+}
+
+.paginationNumberActive {
+  color: var(--color-surface);
+  border-color: transparent;
+  background: rgb(121, 127, 234);
+}
+
+.paginationArrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.arrowLeft {
+  transform: rotate(180deg);
+}
+
+.arrowIcon {
+  width: 14px;
+  height: 14px;
+  color: rgb(178, 179, 185);
+}
+
+@media (max-width: 768px) {
+  .paginationRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

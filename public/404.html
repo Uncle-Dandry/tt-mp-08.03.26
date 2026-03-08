@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tt-mp-08.03.26 404</title>
+    <script>
+      const segmentCount = 1
+      const { pathname, search, hash } = window.location
+      const basePath = pathname
+        .split('/')
+        .slice(0, 1 + segmentCount)
+        .join('/')
+      const route = pathname
+        .slice(basePath.length)
+        .replace(/&/g, '~and~')
+      const query = search ? `${search.replace('?', '&')}` : ''
+
+      window.location.replace(`${basePath}/?/${route}${query}${hash}`)
+    </script>
+  </head>
+  <body></body>
+</html>

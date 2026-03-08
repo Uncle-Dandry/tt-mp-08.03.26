@@ -1,0 +1,103 @@
+.productHeader {
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.headerCheckbox {
+  position: relative;
+  display: grid;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid rgb(178, 179, 185);
+  border-radius: 4px;
+  background: var(--color-surface);
+  cursor: pointer;
+  transition: border-color 0.18s ease, background-color 0.18s ease;
+}
+
+.headerCheckbox::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  content: '';
+  transform: scale(0.7);
+  transition: transform 0.18s ease, background-color 0.18s ease;
+}
+
+.headerCheckbox::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 2px;
+  border-radius: 999px;
+  background: transparent;
+  content: '';
+  transform: translate(-50%, -50%);
+  transition: background-color 0.18s ease;
+}
+
+.checkboxSelected {
+  border-color: rgb(178, 179, 185);
+  background: var(--color-surface);
+}
+
+.checkboxSelected::after {
+  background: var(--color-blue-muted);
+  transform: scale(1);
+}
+
+.checkboxIndeterminate::after {
+  background: var(--color-blue-muted);
+  transform: scale(1);
+}
+
+.checkboxIndeterminate::before {
+  background: rgb(255, 255, 255);
+}
+
+.headerCheckbox:hover,
+.sortButton:hover {
+  border: 1px solid rgb(178, 179, 185);
+  background: rgba(36, 46, 219, 0.08);
+}
+
+.headerTitle,
+.sortButton {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.headerTitleCentered,
+.sortButtonCentered {
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.sortButton {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+}
+
+.sortIcon {
+  display: inline-flex;
+  opacity: 0.58;
+  transform: translateY(-1px);
+}
+
+.sortIcon[data-order='asc'] {
+  transform: rotate(180deg) translateY(1px);
+}
+
+.sortIconActive {
+  opacity: 1;
+  color: var(--color-blue-muted);
+}
